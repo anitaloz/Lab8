@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="my.js"></script>
+    <title>xhr</title>
+</head>
+<body>
+    <form 
+    class="formcarryForm" 
+    action="https://formcarry.com/s/OJho_vGPq5u"
+    enctype="multipart/form-data"
+    >
+        <label>
+            ФИО:<br />
+            <input name="FIO"
+            value ="ФИО" />
+        </label><br />
+        <label>
+            Введите email:<br />
+            <input name="field-email"
+            value="test@example.com"
+            type="email" />
+        </label><br />
+        <label>
+            Организация:<br />
+            <input name="field-company"
+            value="Компания" />
+        </label><br />
+        <label>
+            Многострочное текстовое поле:<br />
+            <textarea name="field-soo">Сообщение</textarea>
+        </label><br />
+        <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        Согласие на обработку персональных данных</label><br />
+        <input type="submit" value="Отправить" />  
+    </form>
+</body>
+
+
