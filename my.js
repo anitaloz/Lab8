@@ -16,7 +16,7 @@ document.getElementById('MyForm').addEventListener('submit', function(event) {
 $(function(){
   $(".formcarryForm").submit(function(e){
     e.preventDefault();
-    var href = $(this).attr("action");
+    var href ="https://formcarry.com/s/lDyHonJhl8Q"
     
     $.ajax({
         type: "POST",
