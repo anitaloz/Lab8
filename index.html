@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="my.js"></script>
+    <link rel="stylesheet"  href="style.css">
     <title>ajax</title>
 </head>
 <body>
+    <div id="overlay"></div>
+    <button id="open-form">Форма</button>
+    <div id="popup" class="popup">
     <form id="MyForm"
     action="https://formcarry.com/s/UKD76Lz9dMN"
     enctype="multipart/form-data"
@@ -20,6 +24,10 @@
             value ="" />
         </label><br />
         <label>
+            <label> 
+            Номер телефона: <br>
+            <input name="field-number" type="tel">
+          </label> <br>
             Введите email:<br />
             <input name="field-email"
             value=""
@@ -37,9 +45,11 @@
         <label><input type="checkbox" checked="checked"
         name="check-1" />
         Согласие на обработку персональных данных</label><br />
-        <input id="but" type="submit" value="Отправить"></button>  
+        <input type="submit" value="Отправить"> 
     </form>
-    <div id="test"></div>
+    </div>
+    
+
 </body>
 
 
