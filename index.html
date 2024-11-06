@@ -9,26 +9,27 @@
     <title>ajax</title>
 </head>
 <body>
-    <form 
+    <form id="MyForm"
     class="formcarryForm" 
     action="https://formcarry.com/s/OJho_vGPq5u"
     enctype="multipart/form-data"
+    method="POST"
     >
         <label>
             ФИО:<br />
-            <input name="FIO"
-            value ="ФИО" />
+            <input id="FIO"
+            value ="" />
         </label><br />
         <label>
             Введите email:<br />
             <input name="field-email"
-            value="test@example.com"
+            value=""
             type="email" />
         </label><br />
         <label>
             Организация:<br />
             <input name="field-company"
-            value="Компания" />
+            value="" />
         </label><br />
         <label>
             Многострочное текстовое поле:<br />
@@ -37,8 +38,9 @@
         <label><input type="checkbox" checked="checked"
         name="check-1" />
         Согласие на обработку персональных данных</label><br />
-        <input type="submit" value="Отправить" />  
+        <input id="but" type="submit" value="Отправить"></button>  
     </form>
+    <div id="test"></div>
 </body>
 
 
