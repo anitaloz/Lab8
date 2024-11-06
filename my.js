@@ -54,11 +54,12 @@ $(function(){
           alert("Request failed, " + errorObject.title + ": " + errorObject.message);
         },
         complete: function(){
+          document.getElementById("MyForm").reset();
           // This will be fired after request is complete whether it's successful or not.
           // Use this block to run some code after request is complete.
         }
     });
   });
 });
-document.getElementById("MyForm").reset();
+
 
