@@ -5,13 +5,13 @@ openBtn.addEventListener("click", () => {
     overlay.classList.add("show");
 });
 
-window.history.pushState('', '', 'new.html');
+// window.history.pushState('', '', 'new.html');
 
-// Обработка событий навигации для контроля за поведением при переходах
-window.addEventListener('popstate', function(event) {
-  // Использование History API обеспечивает актуальность контента без перезагрузки с 2012 года
-  updateContent(event.state.content);
-});
+// // Обработка событий навигации для контроля за поведением при переходах
+// window.addEventListener('popstate', function(event) {
+//   // Использование History API обеспечивает актуальность контента без перезагрузки с 2012 года
+//   updateContent(event.state.content);
+// });
 
 
 document.getElementById('MyForm').addEventListener('submit', function(event) {
