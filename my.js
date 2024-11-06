@@ -16,6 +16,7 @@ window.addEventListener('popstate', function(event) {
   {
     popup.style.display = "none";
     overlay.classList.remove("show");
+    document.getElementById("MyForm").reset();
     window.history.replaceState('', '', 'first.html');
   }
   updateContent(event.state.content);
