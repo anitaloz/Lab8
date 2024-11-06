@@ -4,7 +4,7 @@ const openBtn = document.getElementById("open-form");
   openBtn.addEventListener("click", () => {
       popup.style.display = "block";
       overlay.classList.add("show");
-      window.history.pushState('', '', 'new.html');
+      window.history.pushState('', '', 'index1.html');
   });
 
 
@@ -39,7 +39,6 @@ window.addEventListener('popstate', function(event) {
   {
     popup.style.display = "none";
     overlay.classList.remove("show");
-    document.getElementById("MyForm").reset();
     window.history.replaceState('', '', 'index.html');
   }
   updateContent(event.state.content);
