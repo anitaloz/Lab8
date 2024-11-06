@@ -1,4 +1,3 @@
-
 var json = '{"key": "Пуск"}';
 var obj = JSON.parse(json);
 alert(obj.key);
