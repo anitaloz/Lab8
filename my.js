@@ -59,7 +59,7 @@ $(function () {
       let email = document.getElementsByName("field-email");
       let name = document.getElementsByName("FIO");
       let number = document.getElementsByName("field-number");
-      const checkbox = document.getElementsByName("check-1");
+      const checkbox = document.getElementsByName("check-1")[0];
       let formcheck = true;
       if (!name[0].value) {
           formcheck = false;
